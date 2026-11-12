@@ -8,7 +8,7 @@ public class homecontroller {
 
     @RequestMapping("/")
     public String root() {
-        return "forward:/dashboard.jsp";
+        return "index";
     }
     
     @RequestMapping("/dashboard")
@@ -100,5 +100,10 @@ public class homecontroller {
     @RequestMapping("/mis")
     public String mis() {
         return "mis";
+    }
+    
+    @RequestMapping("/aboutproduct")
+    public String aboutproduct() {
+        return "aboutproduct";
     }
 }

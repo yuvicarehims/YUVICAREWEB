@@ -1055,8 +1055,14 @@
             <div class="about-hero-inner">
                 <div class="about-hero-text">
                     <h1>Transforming Healthcare Through Technology</h1>
-                    <p>YUVICARE is leading the digital revolution in healthcare management, providing innovative solutions that empower hospitals to deliver exceptional patient care.</p>
-                    <a href="#story" class="btn btn-primary">Discover Our Journey</a>
+<!--                     <p>YUVICARE is leading the digital revolution in healthcare management, providing innovative solutions that empower hospitals to deliver exceptional patient care.</p>
+ -->                   
+ 
+ 
+                    <p>Manas Agro Industries & Infrastructure Ltd is a MULTI SEGMENT deemed public limited company registered in India with  sale revenue of about INR 650 Crores (USD 88 Million approx.).</p>
+                    <p>It has recently commenced its services in the healthcare industry by introducing a Hospital Information Management system under the name & style of “YUVICARE”.</p>
+                    <p>For more details visit website (Link)</p>
+                     <a href="#story" class="btn btn-primary">Discover Our Journey</a>
                 </div>
                 <div class="about-hero-image">
                     <img src="${pageContext.request.contextPath}/views/images/hospital2.jpg" alt="Modern Hospital Care">
