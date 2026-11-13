@@ -2093,10 +2093,12 @@ scale(
 
 /* ===== MAIN CONTENT ===== */
 .main {
-	min-height: 100vh;
-	padding: 30px 35px;
-	background: #f4f7fb;
-	box-sizing: border-box;
+    min-height: 10;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: #f4f7fb;
+    box-sizing: border-box;
 }
 
 /* ===== PAGE CONTAINER ===== */
@@ -2241,6 +2243,429 @@ to {
 .main-nav li.has-submenu.active>.submenu {
 	display: block !important;
 }
+
+
+
+
+/* IPD PAGE */
+.ipd-page {
+    padding: 25px;
+    background: #f3fafa;
+    border-radius: 12px;
+}
+
+/* HEADER */
+.ipd-page-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    margin-bottom: 22px;
+    background: #40E0D0;
+    border-radius: 12px;
+    color: #003B5C;
+}
+
+.ipd-header-icon {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    background: rgba(255,255,255,0.65);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ipd-page-header h2 {
+    margin: 0 0 7px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ipd-page-header p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* INTRO CARD */
+.ipd-intro-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e0eeee;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.ipd-intro-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #087d85;
+}
+
+.ipd-intro-heading i {
+    font-size: 21px;
+}
+
+.ipd-intro-heading h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.ipd-intro-card p {
+    color: #607080;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 12px 0 0;
+}
+
+/* SECTION CARD */
+.ipd-section-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+    border: 1px solid #e1ebed;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.045);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ipd-section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.09);
+}
+
+/* SECTION HEADING */
+.ipd-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8eeee;
+}
+
+.ipd-number {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #40E0D0;
+    color: #003B5C;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ipd-section-heading h3 {
+    margin: 0;
+    color: #174765;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ipd-section-heading h3 i {
+    color: #079c9c;
+    margin-right: 7px;
+}
+
+.ipd-section-heading p {
+    margin: 5px 0 0;
+    color: #82909d;
+    font-size: 13px;
+}
+
+/* FEATURE LIST */
+.ipd-feature-list {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: #526575;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.ipd-feature-list li {
+    padding-left: 5px;
+    margin-bottom: 4px;
+}
+
+.ipd-feature-list li::marker {
+    color: #079c9c;
+}
+
+/* IMAGE */
+.ipd-image-container {
+    margin-top: 18px;
+    padding: 15px;
+    background: #f7fbfb;
+    border: 1px solid #e5eeee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ipd-image-container img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 650px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* FOOTER */
+.ipd-footer {
+    text-align: center;
+    padding: 22px 10px;
+    margin-top: 25px;
+    color: #7a8b94;
+    font-size: 12px;
+    border-top: 1px solid #dce9e9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .ipd-page {
+        padding: 12px;
+    }
+
+    .ipd-page-header {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .ipd-header-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 23px;
+    }
+
+    .ipd-page-header h2 {
+        font-size: 20px;
+    }
+
+    .ipd-page-header p {
+        font-size: 12px;
+    }
+
+    .ipd-section-card {
+        padding: 15px;
+    }
+
+    .ipd-section-heading h3 {
+        font-size: 16px;
+    }
+
+    .ipd-image-container {
+        padding: 8px;
+    }
+}
+
+
+
+
+/* ==============================
+   OT PAGE
+============================== */
+
+.ot-page {
+    background: #f3fafa;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* Page Header */
+.ot-page-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #40E0D0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    color: #003B5C;
+}
+
+.ot-header-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    color: #003B5C;
+}
+
+.ot-page-header h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ot-page-header p {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+/* Introduction Card */
+.ot-intro-card {
+    background: #ffffff;
+    padding: 22px 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 5px solid #40E0D0;
+    box-shadow: 0 3px 12px rgba(0, 59, 92, 0.07);
+}
+
+.ot-intro-heading {
+    color: #003B5C;
+    font-size: 19px;
+    margin: 0 0 12px;
+}
+
+.ot-intro-heading i {
+    margin-right: 8px;
+    color: #009f9a;
+}
+
+.ot-intro-card p {
+    color: #596b75;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Feature Section Cards */
+.ot-section-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 14px rgba(0, 59, 92, 0.07);
+    border: 1px solid #e5eeee;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ot-section-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 59, 92, 0.12);
+}
+
+/* Section Heading */
+.ot-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 15px;
+}
+
+.ot-number {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 10px;
+    background: #40E0D0;
+    color: #003B5C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ot-section-heading h3 {
+    color: #003B5C;
+    font-size: 19px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.ot-section-heading h3 i {
+    color: #009f9a;
+    margin-right: 7px;
+}
+
+/* Feature List */
+.ot-feature-list {
+    padding-left: 25px;
+    margin: 12px 0 20px;
+    color: #596b75;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.ot-feature-list li {
+    padding-left: 5px;
+}
+
+/* Image Container */
+.ot-image-container {
+    width: 100%;
+    background: #f8fbfb;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e5eeee;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ot-image-container img {
+    max-width: 100%;
+    max-height: 650px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+.ot-footer {
+    text-align: center;
+    font-size: 11px;
+    color: #71818a;
+    margin-top: 35px;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ot-page {
+        padding: 12px;
+    }
+
+    .ot-page-header {
+        padding: 18px;
+    }
+
+    .ot-page-header h2 {
+        font-size: 20px;
+    }
+
+    .ot-section-card {
+        padding: 17px;
+    }
+
+    .ot-section-heading h3 {
+        font-size: 16px;
+    }
+
+    .ot-image-container {
+        padding: 8px;
+    }
+}
+
+
 </style>
 
 
@@ -2276,34 +2701,187 @@ to {
 					</a></li>
 
 
-					<!-- Product Overview -->
-					<li class="has-submenu"><a href="#"
-						onclick="toggleSubmenu(event, this)"> <i
-							class="fas fa-th-large"></i> Product Overview <i
-							class="fa fa-chevron-down"></i>
-					</a>
+				
+<!-- Product Overview -->
+<li class="has-submenu">
+    <a href="#" onclick="toggleSubmenu(event, this)">
+        <i class="fas fa-th-large"></i>
+        Product Overview
+        <i class="fa fa-chevron-down"></i>
+    </a>
 
-						<ul class="submenu">
-							<li class="has-submenu"><a href="#"
-								onclick="toggleSubmenu(event, this)"> OPD (Out-Patient
-									Department) <i class="fa fa-chevron-down"></i>
-							</a>
+    <!-- Product Overview Dropdown -->
+    <ul class="submenu">
+         <li><a href="#" onclick="showPage('main-dashboard'); return false;" >Main Dashboard</a>
+        <!-- OPD Dropdown -->
+        <li class="has-submenu">
+            <a href="#" onclick="toggleSubmenu(event, this)">
+                OPD (Out-Patient Department)
+                <i class="fa fa-chevron-down"></i>
+            </a>
 
-								<ul class="submenu">
-									<li><a href="#"
-										onclick="showPage('opd-dashboard'); return false;">OPD</a></li>
-									<li><a href="#"
-										onclick="showPage('appointment'); return false;">Appointment
-											Finder</a></li>
-									<li><a href="#"
-										onclick="showPage('vaccination'); return false;">Vaccination</a></li>
-									<li><a href="#"
-										onclick="showPage('prescription'); return false;">Prescription</a></li>
-									<li><a href="#" onclick="showPage('emr'); return false;">EMR</a></li>
-									<li><a href="#"
-										onclick="showPage('tele-medicine'); return false;">Tele-Medicine</a></li>
-								</ul></li>
-						</ul></li>
+            <ul class="submenu">
+                <li><a href="#" onclick="showPage('opd-dashboard'); return false;">OPD</a></li>
+                <li><a href="#" onclick="showPage('appointment'); return false;">Appointment Finder</a></li>
+                <li><a href="#" onclick="showPage('vaccination'); return false;">Vaccination</a></li>
+                <li><a href="#" onclick="showPage('prescription'); return false;">Prescription</a></li>
+                <li><a href="#" onclick="showPage('emr'); return false;">EMR</a></li>
+                <li><a href="#" onclick="showPage('tele-medicine'); return false;">Tele-Medicine</a></li>
+            </ul>
+        </li>
+
+<!-- IPD Dropdown -->
+<li class="has-submenu">
+    <a href="#" onclick="toggleSubmenu(event, this)">
+        IPD (In-Patient Department)
+        <i class="fa fa-chevron-down"></i>
+    </a>
+
+    <ul class="submenu">
+        <li>
+            <a href="#" onclick="showPage('ipd-dashboard'); return false;">
+                IPD Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="showPage('operation-theatre'); return false;">
+                OT (Operation Theatre)
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="showPage('casualty'); return false;">
+                Casualty
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="showPage('visiting-consultant'); return false;">
+                Visiting Consultant
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="showPage('ipd-emr'); return false;">
+                EMR
+            </a>
+        </li>
+
+        <li>
+            <a href="#" onclick="showPage('discharge'); return false;">
+                Discharge
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+<li class="has-submenu">
+    <a href="#" onclick="toggleSubmenu(event, this)">
+        Investigation
+        <i class="fa fa-chevron-down"></i>
+    </a>
+
+    <ul class="submenu">
+        <li>
+            <a href="#" onclick="showPage('investigation'); return false;">
+                <i class="fa fa-flask"></i>
+                Investigation
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="showPage('analytics'); return false;">
+                <i class="fa fa-chart-line"></i>
+                Analytics
+            </a>
+        </li>
+        <li>
+            <a href="#" onclick="showPage('pacs'); return false;">
+                <i class="fa fa-x-ray"></i>
+                PACS
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+
+<li class="has-submenu">
+    <a href="javascript:void(0);" onclick="toggleSubmenu(event, this)">
+        <span>
+            <!-- <i class="fas fa-clinic-medical"></i> -->
+            Store & Pharmacy
+        </span>
+        <i class="fa fa-chevron-down submenu-arrow"></i>
+    </a>
+
+    <ul class="submenu">
+        <li>
+            <a href="javascript:void(0);" onclick="showPage('inventory')">
+                <i class="fas fa-boxes"></i>
+                Inventory
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0);" onclick="showPage('pharmacy')">
+                <i class="fas fa-pills"></i>
+                Pharmacy
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0);" onclick="showPage('indent')">
+                <i class="fas fa-file-invoice"></i>
+                Indent Management
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+<!-- Account Section -->
+<li class="has-submenu">
+    <a href="javascript:void(0)" onclick="toggleSubmenu(event, this)">
+       <!--  <i class="fas fa-wallet"></i> -->
+        <span>Account</span>
+        <i class="fa fa-chevron-down submenu-arrow"></i>
+    </a>
+
+    <ul class="submenu">
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('account')">
+                <i class="fas fa-chart-pie"></i>
+                Account
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('refund_request')">
+                <i class="fas fa-undo-alt"></i>
+                Refund Request Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('discount_request')">
+                <i class="fas fa-tags"></i>
+                Discount Request Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" onclick="showPage('tpa')">
+                <i class="fas fa-handshake"></i>
+                TPA Management
+            </a>
+        </li>
+    </ul>
+</li>
+
+    </ul>
+</li>
 
 
 					<li><a href="${pageContext.request.contextPath}/contactus">
@@ -2979,6 +3557,44 @@ to {
 
 	<!-- MAIN CONTENT -->
 	<div class="main">
+	
+	
+	<!--Main Dashboard  -->
+	
+			<div class="page" id="main-dashboard" style="display: none;">
+			<h1 class="page-title">Main Dashboard</h1>
+
+			<!-- 1. OPD Dashboard -->
+			<div class="section">
+				<div class="section-header">Login</div>
+				<ul class="section-list">
+					<li>This is the first page where user lands after logging in the system.</li>
+				</ul>
+				<div class="section-content text-center">
+					<img src="${pageContext.request.contextPath}/views/images/login.png"
+						alt="Main Dashboard" />
+				</div>
+			</div>
+
+			<div class="divider"></div>
+
+			<!-- 2. Book Appointment -->
+			<div class="section">
+				<div class="section-header">Main Dashobard</div>
+				<ul class="section-list">
+					<li>It displays the icons of various modules.</li>
+					<li>The user can see  icons for only those modules to which he has an access.</li>
+				</ul>
+				<div class="section-content text-center">
+					<img src="${pageContext.request.contextPath}/views/images/maindashboard.png"
+						alt="Book Appointment" />
+				</div>
+			</div>
+
+
+		</div>
+	
+	
 		<!-- OPD Dashboard -->
 		<div class="page" id="opd-dashboard" style="display: none;">
 			<h1 class="page-title">OPD Overview</h1>
@@ -3432,19 +4048,1099 @@ to {
 				</div>
 			</div>
 		</div>
-	</div>
+	
 	<!-- End Main -->
+	
+	
+	
+	
+	
+	        <!-- MAIN CONTENT -->
+          
+<!-- IPD DASHBOARD PAGE -->
+<div class="page ipd-page" id="ipd-dashboard" style="display:none;">
 
+    <!-- IPD PAGE HEADER -->
+    <div class="ipd-page-header">
+        <div class="ipd-header-icon">
+            <i class="fas fa-procedures"></i>
+        </div>
+
+        <div>
+            <h2>IPD Management</h2>
+            <p>
+                In-Patient Department – Manage admissions, beds,
+                patient care and discharge procedures.
+            </p>
+        </div>
+    </div>
+
+    <!-- IPD OVERVIEW -->
+    <div class="ipd-intro-card">
+        <div class="ipd-intro-heading">
+            <i class="fas fa-hospital"></i>
+            <h3>In-Patient Department Overview</h3>
+        </div>
+
+        <p>
+            Manage comprehensive in-patient services, bed availability,
+            patient admissions, prescriptions, investigations and
+            discharge procedures through an integrated system.
+        </p>
+    </div>
+
+    <!-- 1. IPD DASHBOARD -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">01</span>
+            <div>
+                <h3><i class="fas fa-columns"></i> IPD Dashboard</h3>
+                <p>Complete overview of hospital IPD activities.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Get a categorized, at-a-glance view of hospital IPD.</li>
+            <li>Monitor occupied beds and vacant beds.</li>
+            <li>Manage general, insured and third-party patients.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/1 12.png"
+                 alt="IPD Dashboard Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 2. BED STATUS -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">02</span>
+            <div>
+                <h3><i class="fas fa-bed"></i> Bed Status</h3>
+                <p>Monitor bed occupancy and availability.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>View information about occupied beds.</li>
+            <li>Access important medical and administrative functions with a single click on the relevant icon.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/2 11.png"
+                 alt="Bed Status Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 3. IPD PATIENT DASHBOARD -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">03</span>
+            <div>
+                <h3><i class="fas fa-user-injured"></i> IPD Patient Dashboard</h3>
+                <p>Access and manage IPD patient functionalities.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>View all the IPD functionalities.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/3 7.png"
+                 alt="IPD Patient Dashboard Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 4. PATIENT ADMISSION -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">04</span>
+            <div>
+                <h3><i class="fas fa-file-medical-alt"></i> Patient Admission Form</h3>
+                <p>Manage patient information during IPD admission.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Manage patient information required for IPD admission.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/4 5.png"
+                 alt="Patient Admission Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 5. PRESCRIPTION -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">05</span>
+            <div>
+                <h3><i class="fas fa-prescription"></i> Prescription</h3>
+                <p>Manage patient prescriptions.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Prepare and save prescriptions for patients.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/5 5.png"
+                 alt="Prescription Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 6. INVESTIGATION -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">06</span>
+            <div>
+                <h3><i class="fas fa-microscope"></i> Investigation</h3>
+                <p>Manage patient investigations.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Prepare and save investigations for patients.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/6 3.png"
+                 alt="Investigation Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 7. AUTO CHARGES -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">07</span>
+            <div>
+                <h3><i class="fas fa-file-invoice-dollar"></i> Auto Charges</h3>
+                <p>Automated calculation of recurring service charges.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Define fixed charges for services provided on a per-day basis and have them charged automatically.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/7 2.png"
+                 alt="Auto Charges Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 8. DISCHARGE STATUS -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">08</span>
+            <div>
+                <h3><i class="fas fa-door-open"></i> Discharge Status</h3>
+                <p>Track patient discharge progress.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Check and view the discharge status of patients.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/8 2.png"
+                 alt="Discharge Status Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 9. DISCHARGE FORM -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">09</span>
+            <div>
+                <h3><i class="fas fa-file-signature"></i> Discharge Form</h3>
+                <p>Manage patient discharge information.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>Enter the information required to initiate patient discharge.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/9 2.png"
+                 alt="Discharge Form Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- 10. DECLARATION FORM -->
+    <div class="ipd-section-card">
+        <div class="ipd-section-heading">
+            <span class="ipd-number">10</span>
+            <div>
+                <h3><i class="fas fa-file-contract"></i> Declaration Form</h3>
+                <p>Patient consent and declaration management.</p>
+            </div>
+        </div>
+
+        <ul class="ipd-feature-list">
+            <li>View the requisite forms for recording patient consent before a medical procedure.</li>
+        </ul>
+
+        <div class="ipd-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/10 2.png"
+                 alt="Declaration Form Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="ipd-footer">
+        Copyright © 2021. All Rights Reserved by
+        Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+<!-- END IPD DASHBOARD PAGE -->
+
+
+
+
+<!-- OT (Operation Theatre) Page -->
+<div class="page ot-page" id="operation-theatre" style="display:none;">
+
+    <!-- Page Header -->
+    <div class="ot-page-header">
+        <div class="ot-header-icon">
+            <i class="fas fa-procedures"></i>
+        </div>
+        <div>
+            <h2>OT (Operation Theatre)</h2>
+            <p>Operation Theatre Management</p>
+        </div>
+    </div>
+
+    <!-- Introduction Card -->
+    <div class="ot-intro-card">
+        <h3 class="ot-intro-heading">
+            <i class="fas fa-hospital"></i>
+            Operation Theatre Overview
+        </h3>
+        <p>
+            Manage Operation Theatre schedules, bookings, patient details,
+            surgical notes, and procedure-related activities efficiently
+            through the OT Management module.
+        </p>
+    </div>
+
+    <!-- 01. OT Dashboard -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">01</span>
+            <h3><i class="fas fa-tachometer-alt"></i> OT Dashboard</h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>View OT booking schedule.</li>
+            <li>Initiate booking.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/ot dashboard.png"
+                 alt="OT Dashboard Overview">
+        </div>
+    </div>
+
+    <!-- 02. Book Appointment -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">02</span>
+            <h3><i class="fas fa-calendar-plus"></i> Book Appointment</h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Enter information for booking the OT.</li>
+            <li>Book OT for a patient.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/ot book appointment.png"
+                 alt="OT Booking Overview">
+        </div>
+    </div>
+
+    <!-- 03. OT Patient Dashboard -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">03</span>
+            <h3><i class="fas fa-user-injured"></i> OT Patient Dashboard</h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>View OT-related details for a patient.</li>
+            <li>Manage OT functions and workflow.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/ot patient dashboard.png"
+                 alt="OT Patient Dashboard Overview">
+        </div>
+    </div>
+
+    <!-- 04. Operation Notes -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">04</span>
+            <h3><i class="fas fa-clipboard-list"></i> Operation Notes</h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Maintain OT surgical notes and procedure details.</li>
+            <li>Upload OT images and capture procedure videos.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/operation notes.png"
+                 alt="Operation Notes Overview">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="ot-footer">
+        Copyright © 2021. All Rights Reserved by Manas Agro Industries
+        and Infrastructure Limited
+    </div>
+
+</div>
+
+
+
+<!-- Casualty Page -->
+<div class="page ot-page" id="casualty" style="display:none;">
+
+    <!-- Page Header -->
+    <div class="ot-page-header">
+        <div class="ot-header-icon">
+            <i class="fas fa-ambulance"></i>
+        </div>
+        <div>
+            <h2>Casualty</h2>
+            <p>Emergency and Casualty Management</p>
+        </div>
+    </div>
+
+    <!-- Introduction Card -->
+    <div class="ot-intro-card">
+        <h3 class="ot-intro-heading">
+            <i class="fas fa-heartbeat"></i>
+            Casualty Management Overview
+        </h3>
+        <p>
+            Manage emergency admissions, patient shifts, and casualty services.
+            Monitor bed availability, manage casualty patients, and transfer
+            patients from casualty to the IPD department.
+        </p>
+    </div>
+
+    <!-- 01. Casualty Dashboard -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">01</span>
+            <h3>
+                <i class="fas fa-heartbeat"></i>
+                Casualty Dashboard
+            </h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Get categorized, at-a-glance view of beds.</li>
+            <li>View occupied beds and vacant beds.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/casuality dashboard.png"
+                 alt="Casualty Dashboard Overview">
+        </div>
+    </div>
+
+    <!-- 02. Casualty Patient Dashboard -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">02</span>
+            <h3>
+                <i class="fas fa-procedures"></i>
+                Casualty Patient Dashboard
+            </h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Manage casualty patient services.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/casuality patient dashboard.png"
+                 alt="Casualty Patient Dashboard Overview">
+        </div>
+    </div>
+
+    <!-- 03. Shift Patient Popup -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">03</span>
+            <h3>
+                <i class="fas fa-exchange-alt"></i>
+                Shift Patient Popup
+            </h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Shift patient from casualty to IPD.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/casuality patient popup.png"
+                 alt="Shift Patient Overview">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="ot-footer">
+        Copyright © 2021. All Rights Reserved by Manas Agro Industries
+        and Infrastructure Limited
+    </div>
+
+</div>
+
+
+
+<!-- Visiting Consultant Page -->
+<div class="page ot-page" id="visiting-consultant" style="display:none;">
+
+    <!-- Page Header -->
+    <div class="ot-page-header">
+        <div class="ot-header-icon">
+            <i class="fas fa-user-md"></i>
+        </div>
+        <div>
+            <h2>Visiting Consultant</h2>
+            <p>Visiting Consultant Management</p>
+        </div>
+    </div>
+
+    <!-- Introduction Card -->
+    <div class="ot-intro-card">
+        <h3 class="ot-intro-heading">
+            <i class="fas fa-user-md"></i>
+            Visiting Consultant Overview
+        </h3>
+        <p>
+            Manage visiting consultants, their schedules, and profiles.
+            Maintain consultant information and access the complete list
+            of visiting consultants through this module.
+        </p>
+    </div>
+
+    <!-- 01. Visiting Consultant Dashboard -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">01</span>
+            <h3>
+                <i class="fas fa-users-cog"></i>
+                Visiting Consultant Dashboard
+            </h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>View complete list of visiting consultants.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/visting consultant dashboard.png"
+                 alt="Visiting Consultant Dashboard">
+        </div>
+    </div>
+
+    <!-- 02. Add Visiting Consultant -->
+    <div class="ot-section-card">
+        <div class="ot-section-heading">
+            <span class="ot-number">02</span>
+            <h3>
+                <i class="fas fa-user-plus"></i>
+                Add Visiting Consultant
+            </h3>
+        </div>
+
+        <ul class="ot-feature-list">
+            <li>Add and manage consultant details.</li>
+        </ul>
+
+        <div class="ot-image-container">
+            <img src="${pageContext.request.contextPath}/views/images/visiting consultant dashboard2.png"
+                 alt="Add Visiting Consultant">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="ot-footer">
+        Copyright © 2021. All Rights Reserved by Manas Agro Industries
+        and Infrastructure Limited
+    </div>
+
+</div>
+
+
+<!-- EMR Page -->
+<div class="page opd-page" id="ipd-emr" style="display: none;">
+
+    <!-- Title Section -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-notes-medical"></i>
+            EMR (Electronic Medical Records)
+        </h2>
+
+        <p style="color: var(--medium-text); font-size: 16px; margin-top: 10px; line-height: 1.6;">
+            Digital access to patient records, diagnosis, and treatment history.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 1. EMR Dashboard -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-chart-bar"></i>
+            EMR Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View complete patient visit history.</li>
+                <li>Manage treatment records in one place.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/EMR dashboard.png"
+                 alt="EMR Dashboard Overview" />
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 2. Update Notes -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-edit"></i>
+            Update Notes
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Record doctor consultation notes.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/EMR diagnosis.png"
+                 alt="Update Notes Overview" />
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. Consultation Notes -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-history"></i>
+            Consultation Notes
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View and print consultation history.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/EMR Demo.png"
+                 alt="Consultation Notes Overview" />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; font-size: 11px; color: var(--medium-text); margin-top: 40px; padding: 20px;">
+        Copyright © 2021. All Rights Reserved by Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+
+
+
+<!-- DISCHARGE MANAGEMENT PAGE -->
+<div class="page" id="discharge" style="display:none;">
+
+    <!-- Page Header -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-door-open"></i>
+            Discharge Management
+        </h2>
+
+        <p style="color: var(--medium-text); font-size: 16px; margin-top: 10px; line-height: 1.6;">
+            Handle patient discharges, manage discharge information
+            and generate comprehensive discharge summaries.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 01. Discharge Dashboard -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-chart-line"></i>
+            Discharge Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View patients who are ready for discharge.</li>
+                <li>Monitor and update patient discharge details.</li>
+                <li>Track the discharge process and patient status.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/Discharge dashboard.png"
+                alt="Discharge Dashboard Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 02. Discharge Summary -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-file-alt"></i>
+            Discharge Summary
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Generate comprehensive patient discharge summaries.</li>
+                <li>View and print discharge summaries for patient records.</li>
+                <li>Maintain discharge documentation and treatment details.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/Discharge summary.png"
+                alt="Discharge Summary Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; font-size: 11px; color: var(--medium-text); margin-top: 40px; padding: 20px;">
+        Copyright © 2021. All Rights Reserved by
+        Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+<!-- END DISCHARGE MANAGEMENT PAGE -->
+
+
+
+<!-- ACCOUNT DASHBOARD PAGE -->
+<div class="page" style="display:none;" id="account">
+
+    <!-- PAGE HEADER -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-calculator"></i>
+            Account Management
+        </h2>
+
+        <p style="color: var(--medium-text); font-size: 16px; margin-top: 10px; line-height: 1.6;">
+            Manage accounting operations, financial transactions,
+            ledgers, vouchers and account reports through the
+            integrated accounting module.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 1. ACCOUNT DASHBOARD -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-chart-line"></i>
+            Account Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Manage day-to-day accounting activities.</li>
+                <li>View financial transactions based on date.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/account ledger.png"
+                 alt="Account Dashboard Overview" loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 2. PAYMENT VOUCHER -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-file-invoice-dollar"></i>
+            Payment Voucher
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Create and manage payment vouchers.</li>
+                <li>Record payments received and maintain transaction details.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/Account payment voucher.png"
+                 alt="Payment Voucher Overview" loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. LEDGER DASHBOARD -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-book-open"></i>
+            Ledger Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View account-wise transaction details.</li>
+                <li>Apply filters to search and track financial entries.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/Account ledger dashboard.png"
+                 alt="Ledger Dashboard Overview" loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 4. CREATE NEW LEDGER -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-plus-circle"></i>
+            Create New Ledger
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Create new account ledgers.</li>
+                <li>Update and maintain existing ledger details.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/Account payment voucher.png"
+                 alt="Create New Ledger Overview" loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 5. CREATE NEW LEDGER HEAD -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-folder-plus"></i>
+            Create New Ledger Head
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Create and manage account groups.</li>
+                <li>Edit existing ledger head information.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/account create ledger head.png"
+                 alt="Create New Ledger Head Overview" loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 6. TRIAL BALANCE -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-balance-scale"></i>
+            Trial Balance
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View the trial balance of all accounts.</li>
+                <li>Review debit and credit balances for financial verification.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="${pageContext.request.contextPath}/views/images/Account Trial balance.png"
+                 alt="Trial Balance Overview" loading="lazy">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="text-align: center; font-size: 11px; color: var(--medium-text); margin-top: 30px; padding: 15px;">
+        Copyright © 2021. All Rights Reserved by
+        Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+<!-- END ACCOUNT DASHBOARD -->
+
+
+
+<div class="page"  style="display:none;" id="refund_request">
+
+    <!-- Refund Request Dashboard Header -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-undo"></i>
+            Refund Request Dashboard
+        </h2>
+
+        <p class="section-description">
+            View and manage customer refund requests efficiently.
+            Authorized users can review, approve, or reject refund requests.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Refund Dashboard -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-history"></i>
+            Refund Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View all refund requests received from customers.</li>
+                <li>Authorized users can review and approve or reject refund requests.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/Refund request dashboard.png"
+                alt="Refund Request Dashboard Overview"
+                loading="lazy"
+            />
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; font-size: 11px; color: var(--medium-text); margin-top: 20px; padding: 10px;">
+        Copyright © 2021. All Rights Reserved by Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+
+
+<!-- DISCOUNT REQUEST DASHBOARD -->
+<div class="page"  style="display:none;" id="discount_request">
+
+    <!-- PAGE HEADER -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-percent"></i>
+            Discount Request Dashboard
+        </h2>
+
+        <p class="page-description">
+            View and manage customer discount requests.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- DISCOUNT DASHBOARD -->
+    <div class="section">
+
+        <h3 class="section-subtitle">
+            <i class="fas fa-tags"></i>
+            Discount Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View all discount requests received.</li>
+                <li>Authorized personnel can approve or reject discount requests.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/Account Discount dashboard.png"
+                alt="Discount Request Dashboard Overview"
+                loading="lazy">
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="page-footer">
+        Copyright © 2021. All Rights Reserved by
+        Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+<!-- END DISCOUNT REQUEST DASHBOARD -->
+
+
+
+
+<!-- MAIN CONTENT -->
+<div class="page"  style="display:none;" id="tpa">
+
+    <!-- Title Section -->
+    <div class="section">
+        <h2 class="section-title">
+            <i class="fas fa-hand-holding-usd"></i>
+            TPA Dashboard
+        </h2>
+        <p class="page-description">
+            Third Party Administration management.
+        </p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- TPA Dashboard -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-tachometer-alt"></i>
+            TPA Dashboard
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View the list of all third party patients treated in the hospital.</li>
+                <li>View the status of the reimbursement process.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/TPA dashboard.png"
+                alt="TPA Dashboard Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- View Third Party Payer Organizations -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-building"></i>
+            View Third Party Payer Organizations
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>View the list of third parties who have empaneled the hospital.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/TPA third party.png"
+                alt="TPA Third Party Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Add New Third Party Payer -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-plus-square"></i>
+            Add New Third Party Payer
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Add or maintain the details of a new third party payer.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/TPA add new third party.png"
+                alt="Add New TPA Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- Schedule for TPP Charges -->
+    <div class="section">
+        <h3 class="section-subtitle">
+            <i class="fas fa-calendar-alt"></i>
+            Schedule for TPP Charges
+        </h3>
+
+        <div class="section-description">
+            <ul>
+                <li>Add or edit the third party charges schedule.</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img
+                src="${pageContext.request.contextPath}/views/images/TPA add TP charges.png"
+                alt="TPP Charges Schedule Overview"
+                loading="lazy">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">
+        Copyright © 2021. All Rights Reserved by
+        Manas Agro Industries and Infrastructure Limited
+    </div>
+
+</div>
+
+
+</div>
 	<!-- ===== Footer ===== -->
 	<footer>
 		<div class="container">
 			<div class="footer-grid">
 				<div class="footer-col">
-					<h3>YUVICARE HIMS</h3>
+					<div class="main-logo-text">
+					<img src="views/images/Manas_Yuvicare_Teal_Logo.png" height="50"
+						width="150" style="background-color: white;">
+				</div>
 					<p style="color: #bbb; margin-bottom: 20px; line-height: 1.7;">Complete
-						Hospital Information Management System designed for modern
-						healthcare institutions to deliver exceptional patient care with
-						operational excellence.</p>
+						Hospital Information Management System.</p>
 					<div class="social-links">
 						<a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i
 							class="fab fa-twitter"></i></a> <a href="#"><i
@@ -3459,30 +5155,30 @@ to {
 					<ul class="footer-links">
 						<li><a href="#home"><i class="fas fa-chevron-right"></i>
 								Home</a></li>
-						<li><a href="#features"><i class="fas fa-chevron-right"></i>
-								Features</a></li>
-						<li><a href="#modules"><i class="fas fa-chevron-right"></i>
-								Modules</a></li>
-						<li><a href="#technology"><i class="fas fa-chevron-right"></i>
-								Technology</a></li>
-						<li><a href="#contact"><i class="fas fa-chevron-right"></i>
-								Contact</a></li>
+						<li><a href="${pageContext.request.contextPath}/aboutus"><i class="fas fa-chevron-right"></i>
+								About Us</a></li>
+						<li><a href="${pageContext.request.contextPath}/aboutproduct"><i class="fas fa-chevron-right"></i>
+								About Product</a></li>
+						<li><a href="${pageContext.request.contextPath}/contactus"><i class="fas fa-chevron-right"></i>
+								Contact Us</a></li>
+						<!-- <li><a href="#contact"><i class="fas fa-chevron-right"></i>
+								Contact</a></li> -->
 					</ul>
 				</div>
 
 				<div class="footer-col">
 					<h3>Our Products</h3>
 					<ul class="footer-links">
-						<li><a href="#"><i class="fas fa-chevron-right"></i>
-								YUVICARE HIMS Pro</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i>
-								YUVICARE Clinic</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i>
-								YUVICARE Diagnostics</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i>
-								YUVICARE Pharmacy</a></li>
-						<li><a href="#"><i class="fas fa-chevron-right"></i>
-								YUVICARE Telemedicine</a></li>
+						<li><i class="fas fa-chevron-right"></i>
+								YUVICARE HIMS Pro</li>
+						<li><i class="fas fa-chevron-right"></i>
+								YUVICARE Clinic</li>
+						<li><i class="fas fa-chevron-right"></i>
+								YUVICARE Diagnostics</li>
+						<li><i class="fas fa-chevron-right"></i>
+								YUVICARE Pharmacy</li>
+						<li><i class="fas fa-chevron-right"></i>
+								YUVICARE Telemedicine</li>
 					</ul>
 				</div>
 
@@ -3492,17 +5188,26 @@ to {
 						<li><i class="fas fa-map-marker-alt"></i>
 							<div>
 								<strong>Head Office</strong>
-								<p>123 Healthcare Street, Medical District, City - 560001</p>
+								<p>4th Floor, Gupta Tower, Science college Road, Civil
+									Lines, Nagpur – 440001 (MS) INDIA</p>
 							</div></li>
 						<li><i class="fas fa-phone"></i>
 							<div>
-								<strong>Phone</strong>
-								<p>+91 98765 43210</p>
+								<strong>Mobile</strong>
+								<p>9156248809, 9699836133</p>
 							</div></li>
+							
+							 <li>
+                           <i class="fa-solid fa-tty"></i></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>0712 2557474, 0712 2557575</p>
+                            </div>
+                        </li>
 						<li><i class="fas fa-envelope"></i>
 							<div>
 								<strong>Email</strong>
-								<p>info@yuvicare.com</p>
+								<p>yuvicare.hims@manasindustry.com</p>
 							</div></li>
 						<li><i class="fas fa-clock"></i>
 							<div>
@@ -3515,10 +5220,8 @@ to {
 
 			<div class="copyright">
 				<p>
-					© 2025 YUVICARE Hospital Information Management System. All rights
-					reserved. | <a href="#" style="color: var(--primary);">Privacy
-						Policy</a> | <a href="#" style="color: var(--primary);">Terms of
-						Service</a>
+					© 2020 YUVICARE Hospital Information Management System. All rights
+					reserved.
 				</p>
 			</div>
 		</div>
@@ -3859,35 +5562,41 @@ to {
         });
         
 
+
         function showPage(pageId) {
 
-            // Hide all module pages
+            // 1. Hide all module pages
             document.querySelectorAll(".main .page").forEach(function(page) {
                 page.style.display = "none";
             });
 
-            // Remove previous active menu highlighting
+            // 2. Remove previous active menu highlighting
             document.querySelectorAll(".submenu a").forEach(function(link) {
                 link.classList.remove("selected-menu");
             });
 
-            // Display selected page
+            // 3. Display selected page
             var selectedPage = document.getElementById(pageId);
 
             if (selectedPage) {
 
                 selectedPage.style.display = "block";
 
-                // Highlight clicked menu item
+                // 4. Highlight clicked menu item
                 var clickedLink = document.querySelector(
-                    ".submenu a[onclick*=\"" + pageId + "\"]"
+                    '.submenu a[onclick*="' + pageId + '"]'
                 );
 
                 if (clickedLink) {
                     clickedLink.classList.add("selected-menu");
                 }
 
-                // Scroll to selected page
+                // 5. Close all open dropdown menus
+                document.querySelectorAll(".has-submenu").forEach(function(menu) {
+                    menu.classList.remove("active");
+                });
+
+                // 6. Scroll to selected page
                 window.scrollTo({
                     top: selectedPage.getBoundingClientRect().top +
                          window.pageYOffset - 100,
@@ -3895,6 +5604,7 @@ to {
                 });
             }
         }
+
 
     </script>
 </body>
