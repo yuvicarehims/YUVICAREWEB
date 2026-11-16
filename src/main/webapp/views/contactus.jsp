@@ -3045,11 +3045,12 @@ to {
 					<p style="color: #bbb; margin-bottom: 20px; line-height: 1.7;">Complete
 						Hospital Information Management System.</p>
 					<div class="social-links">
-						<a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i
-							class="fab fa-twitter"></i></a> <a href="#"><i
-							class="fab fa-linkedin-in"></i></a> <a href="#"><i
-							class="fab fa-youtube"></i></a> <a href="#"><i
-							class="fab fa-instagram"></i></a>
+						<a href="https://www.facebook.com/share/1G5y5J3xwt/" target="_blank"><i
+							class="fab fa-facebook-f"></i></a> 
+						<!-- <a href="#"><i class="fab fa-twitter"></i></a>  -->
+						<a href="https://www.linkedin.com/company/manas-yuvicare-hims" target="_blank"><i class="fab fa-linkedin-in"></i></a> 
+						<a href="https://youtube.com/@manasyuvicarehims2819?si=AiCugI-_20pVzbxJ" target="_blank"><i class="fab fa-youtube"></i></a>
+					    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=yoy7qna" target="_blank"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
         
